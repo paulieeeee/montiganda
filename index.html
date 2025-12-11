@@ -1,0 +1,95 @@
+# montiganda<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background image */
+    background-image: url('background grey.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: 'Courier New', monospace; /* Default font for rest of text */
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background-color: rgba(255,255,255,0.7);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* HELLO! heading in Cooper Black */
+h1 {
+    font-family: 'Cooper Black', serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.2s forwards;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 35px;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.5s forwards;
+}
+
+.projects-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 18px 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Courier New', monospace; /* buttons also in Courier New */
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.8s forwards;
+}
+
+.projects-button:hover {
+    background-color: #555;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #aaa, 0 0 40px #999;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>HELLO!</h1>
+    <p><b>This is my portfolio, <br>
+    click those buttons to see more :)</b></p>
+    <a class="projects-button" href="about.html"><b>About Me</b></a>
+    <a class="projects-button" href="myproject.html"><b>My Projects</b></a>
+</div>
+
+</body>
+</html>
